@@ -1,6 +1,6 @@
 import React from "react";
 import { View, FlatList, Image, StyleSheet } from "react-native";
-import { Card, Title, Paragraph } from "react-native-paper";
+import { Card, Text } from "react-native-paper";
 
 const jogadores = [
   {
@@ -55,10 +55,10 @@ export default function JogadoresScreen() {
           resizeMode="cover"
         />
         <View>
-          <Title>{item.nome}</Title>
-          <Paragraph>Número: {item.numero}</Paragraph>
-          <Paragraph>Posição: {item.posicao}</Paragraph>
-          <Paragraph>Idade: {item.idade}</Paragraph>
+          <Text>{item.nome}</Text>
+          <Text variant="bodyMedium">Número: {item.numero} </Text>
+          <Text variant="bodyMedium">Posição: {item.posicao} </Text>
+          <Text variant="bodyMedium">Idade: {item.idae} </Text>
         </View>
       </Card.Content>
     </Card>
@@ -76,8 +76,22 @@ export default function JogadoresScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: "#f5f5f5" },
-  card: { marginBottom: 16 },
-  cardContent: { flexDirection: "row", alignItems: "center" },
-  playerImage: { width: 80, height: 80, borderRadius: 40, marginRight: 16 },
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: "#f5f5f5",
+  },
+  card: {
+    marginBottom: 16,
+  },
+  cardContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  playerImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    marginRight: 16,
+  },
 });

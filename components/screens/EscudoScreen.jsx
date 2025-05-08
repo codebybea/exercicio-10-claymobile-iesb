@@ -19,7 +19,7 @@ export default function EscudoScreen() {
         <Card.Content>
           <Image
             source={{ uri: time.escudo }}
-            style={styles.shield}
+            style={styles.escudo}
             resizeMode="contain"
           />
           <Title style={styles.title}>{time.nome}</Title>
@@ -36,6 +36,6 @@ export default function EscudoScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: "#f5f5f5" },
   card: { marginBottom: 16, alignItems: "center" },
-  shield: { width: 150, height: 150, marginBottom: 16 },
+  escudo: { width: 150, height: 150, marginBottom: 16, alignSelf: "center" },
   title: { textAlign: "center", color: "#e91e63" },
 });
